@@ -11,9 +11,8 @@ import jakarta.persistence.GenerationType;
 public class Usuario {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer idUsuario;
-
     private String nome;
     private String email;
     private String senha;
